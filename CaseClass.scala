@@ -13,8 +13,7 @@ object CaseClass {
 case class point(a:Int, b:Int){
     def x:Int = a
     def y:Int = b
-    
-    
+        
     def add(p:point) = point(this.x+p.x, this.y+p.y)
     def move(d1:Int, d2:Int) = point(this.x+d1, this.y+d2)
     def distance(p:point):Double = math.sqrt(math.pow((this.x-p.x), 2) + math.pow((this.y-p.y), 2))  
